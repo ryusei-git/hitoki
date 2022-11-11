@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+header{
+	height:100px;
+	background-color: blue;
+	margin-top:0%;
+}
+
+.nav a {
+	z-index: 1;
+    margin: 0; 
+    padding: 0;
+}
+
+.nav a{
+	font-size: 30px;
+	color:white;
+	}
+
+body {
+	margin:0%;
+	height:0px;
+	background-image: url("../img/index_background.jpg");
+	background-size: 50%;
+}
+
+	.circle{
+  width: 23rem;
+  height: 23rem;
+  border-radius: 60%;
+  background: rgb(255, 196, 85);
+  z-index: 1;
+}
+ .challenge{
+	display:flex;	
+	text-align: center;
+	position: relative;
+	top:50px;
+	font-size: 40px;
+	z-index: 2;
+}
+
+
+.challenge a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 45px;
+  margin-top:260px ;
+  padding: 0;
+  height:50px;
+  width: 280px;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  background-color: rgb(255, 128, 64);
+  border-radius: 50vh;
+  text-align: center;
+}
+
+.challenge a::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-top: 3px solid #333333;
+  border-right: 3px solid #333333;
+  transform: rotate(45deg);
+}
+
+.challenge a:hover {
+  text-decoration: none;
+  background-color: rgb(204, 91, 0);
+}
+.challenge .start {
+	text-align:center;
+	margin-top:160px;
+	width:250px;
+	margin-left:-300px;
+	z-index:2;
+}
