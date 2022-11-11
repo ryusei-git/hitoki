@@ -35,6 +35,16 @@ public class registedServlet extends HttpServlet {
 		String question = request.getParameter("question");
 		String answer = request.getParameter("answer");
 		
+		//ここにバリデーションチェックを入れてみよう下に例を書くよ
+		//こんな感じで変数の中身が{空、記号、文字数とかで判定させるのをバリデーションチェックと言います。}
+		if(question.isEnpty() == true || answer.isEnpty() == true){
+			system.out.println("問題か回答が空文字です。");
+			String view ="WEB-INF/view/error.jsp";
+			RequestDispatcher dispatcher = request.getRequestDispatcher(view);
+			dispatcher.forward(request, response);
+		}
+		
+
 		Quiz quiz = new Quiz(question, answer);
 		QuizDAO.registerQuiz(quiz);
 		
