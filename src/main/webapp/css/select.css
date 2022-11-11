@@ -1,0 +1,20 @@
+@charset "UTF-8";
+body {
+	background-color: rgb(255, 255, 128);
+	text-align: center;
+	margin:0px;
+}
+table {
+	margin-left: 15rem;
+}
+
+nav {
+	font-size: 20px;
+	background-color: rgb(153, 95, 6);
+	margin:0;
+	height:50px;	
+}
+
+nav a {
+	color:white;
+} 
